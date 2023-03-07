@@ -1,0 +1,87 @@
+Falha no processamento de pendências de trâmite do PEN
+Erro: Descrição:
+Falha na recusa de trâmite de processo
+Mensagem:
+Falha na recusa de trâmite de processo
+Trilha de Processamento:
+#0 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(191): ProcessoEletronicoRN->recusarTramite('714777',
+'Descri\xE7\xE3o:Soap...', '99')
+#1 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(257): ProcessarPendenciasRN->receberProcedimento('714777')
+#2 [internal function]: ProcessarPendenciasRN->{closure}(Object(GearmanJob), NULL)
+#3 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(88): GearmanWorker->work()
+#4 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(34): ProcessarPendenciasRN->processarPendencias()
+#5 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(47): ProcessamentoTarefasPEN->processarPendencias()
+#6 {main}
+Detalhes:
+Descrição:
+SoapFault exception: [SOAP-ENV:Server] Erro desconhecido: OperaÃ§Ã£o nÃ£o suportada ('soap_v3:recusarTramite')! in
+/mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php:1516
+Stack trace:
+#0 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): SoapClient->__call('recusarTramite', Array)
+#1 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): BeSimple\SoapClient\SoapClient-
+>recusarTramite(Object(stdClass))
+#2 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1647): ProcessoEletronicoRN->{closure}
+(Object(BeSimple\SoapClient\SoapClient))
+#3 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1517): ProcessoEletronicoRN-
+>tentarNovamenteSobErroHTTP(Object(Closure))
+#4 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(191): ProcessoEletronicoRN->recusarTramite('714777',
+'Descri\xE7\xE3o:Soap...', '99')
+#5 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(257): ProcessarPendenciasRN->receberProcedimento('714777')
+#6 [internal function]: ProcessarPendenciasRN->{closure}(Object(GearmanJob), NULL)
+#7 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(88): GearmanWorker->work()
+#8 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(34): ProcessarPendenciasRN->processarPendencias()
+#9 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(47): ProcessamentoTarefasPEN->processarPendencias()
+#10 {main}
+Mensagem:
+Erro desconhecido: OperaÃ§Ã£o nÃ£o suportada ('soap_v3:recusarTramite')!
+Trilha de Processamento:
+#0 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): SoapClient->__call('recusarTramite', Array)
+#1 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): BeSimple\SoapClient\SoapClient-
+>recusarTramite(Object(stdClass))
+#2 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1647): ProcessoEletronicoRN->{closure}
+(Object(BeSimple\SoapClient\SoapClient))
+#3 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1517): ProcessoEletronicoRN-
+>tentarNovamenteSobErroHTTP(Object(Closure))
+#4 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(191): ProcessoEletronicoRN->recusarTramite('714777',
+'Descri\xE7\xE3o:Soap...', '99')
+#5 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(257): ProcessarPendenciasRN->receberProcedimento('714777')
+#6 [internal function]: ProcessarPendenciasRN->{closure}(Object(GearmanJob), NULL)
+#7 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(88): GearmanWorker->work()
+#8 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(34): ProcessarPendenciasRN->processarPendencias()
+#9 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(47): ProcessamentoTarefasPEN->processarPendencias()
+#10 {main}
+Descrição Original:
+SoapFault exception: [SOAP-ENV:Server] Erro desconhecido: OperaÃ§Ã£o nÃ£o suportada ('soap_v3:recusarTramite')! in
+/mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php:1516
+Stack trace:
+#0 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): SoapClient->__call('recusarTramite', Array)
+#1 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): BeSimple\SoapClient\SoapClient-
+>recusarTramite(Object(stdClass))
+#2 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1647): ProcessoEletronicoRN->{closure}
+(Object(BeSimple\SoapClient\SoapClient))
+#3 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1517): ProcessoEletronicoRN-
+>tentarNovamenteSobErroHTTP(Object(Closure))
+#4 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(191): ProcessoEletronicoRN->recusarTramite('714777',
+'Descri\xE7\xE3o:Soap...', '99')
+#5 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(257): ProcessarPendenciasRN->receberProcedimento('714777')
+#6 [internal function]: ProcessarPendenciasRN->{closure}(Object(GearmanJob), NULL)
+#7 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(88): GearmanWorker->work()
+#8 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(34): ProcessarPendenciasRN->processarPendencias()
+#9 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(47): ProcessamentoTarefasPEN->processarPendencias()
+#10 {main}
+Trilha de Processamento Original:
+0 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): SoapClient->__call('recusarTramite', Array)
+1 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1516): BeSimple\SoapClient\SoapClient-
+>recusarTramite(Object(stdClass))
+2 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1647): ProcessoEletronicoRN->{closure}
+(Object(BeSimple\SoapClient\SoapClient))
+3 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessoEletronicoRN.php(1517): ProcessoEletronicoRN-
+>tentarNovamenteSobErroHTTP(Object(Closure))
+4 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(191): ProcessoEletronicoRN->recusarTramite('714777',
+'Descri\xE7\xE3o:Soap...', '99')
+5 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(257): ProcessarPendenciasRN->receberProcedimento('714777')
+6 [internal function]: ProcessarPendenciasRN->{closure}(Object(GearmanJob), NULL)
+7 /mnt/arquivos_sei/sei/web/modulos/pen/rn/ProcessarPendenciasRN.php(88): GearmanWorker->work()
+8 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(34): ProcessarPendenciasRN->processarPendencias()
+9 /mnt/arquivos_sei/sei/scripts/mod-pen/ProcessamentoTarefasPEN.php(47): ProcessamentoTarefasPEN->processarPendencias()
+10 {main}
